@@ -1,0 +1,150 @@
+
+.user-details-page {
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.light-mode {
+    background: linear-gradient(135deg, #f9f9f9, #ffffff);
+    color: #333;
+}
+
+
+.dark-mode {
+    background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+    color: #f0f0f0;
+}
+
+
+.user-details-header {
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top:0px;
+}
+
+.user-details-header h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #0078ff;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+
+.dark-mode .user-details-header h2 {
+    color: #4dabf7;
+}
+
+.user-details-header p {
+    font-size: 20px;
+    color: #555;
+    font-style: italic;
+    margin: 0;
+    transition: color 0.3s;
+}
+
+
+.dark-mode .user-details-header p {
+    color: #aaa;
+}
+
+
+.user-details-info {
+    width: 80%;
+    background: linear-gradient(135deg, #ffffff, #f4f4f4);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.dark-mode .user-details-info {
+    background: linear-gradient(135deg, #2e2e2e, #444);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+
+.user-details-info section {
+    margin-bottom: 20px;
+}
+
+.user-details-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #0078ff;
+    padding-bottom: 5px;
+    display: inline-block;
+    color: #0078ff;
+}
+
+.dark-mode .user-details-info h3 {
+    color: #4dabf7;
+}
+
+.user-details-info p {
+    font-size: 16px;
+    margin: 5px 0;
+    color: inherit;
+}
+
+.user-details-info p strong {
+    font-weight: 600;
+}
+
+
+.user-details-footer {
+    margin-top: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.user-details-footer button {
+    background: #0078ff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.user-details-footer button:hover {
+    background: #005ecb;
+    transform: scale(1.05);
+}
+
+.dark-mode .user-details-footer button {
+    background: #4dabf7;
+}
+
+.dark-mode .user-details-footer button:hover {
+    background: #3a93e0;
+}
+
+
+@media (max-width: 768px) {
+    .user-details-info {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .user-details-header h2 {
+        font-size: 28px;
+    }
+
+    .user-details-info h3 {
+        font-size: 18px;
+    }
+
+    .user-details-footer button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
